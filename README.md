@@ -1,5 +1,5 @@
 ## Задача
-![Alt task](../employee-work-schedule/public/task.png)
+![Alt task](https://github.com/nihil-pro/employee-work-schedule/blob/main/public/task.png?raw=true)
 
 ## Решение
 
