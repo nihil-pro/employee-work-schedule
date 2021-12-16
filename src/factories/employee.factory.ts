@@ -1,25 +1,22 @@
-import { Preposition } from "."
-import { getRandom } from "./utils"
-
-const roles = ['Повар', 'Официант', 'Уборщик', 'Менеджер', 'Охранник'] as const
-const places = ['Ресторан'] as const
-const names = ['Михаил', 'Евгений', 'Елена', 'Ольга', 'Кристина', 'Роман', 'Сергей'] as const
-export const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] as const
-
-export const WEEKEND = 'weekend' as const
-
-const WORK_DAY_START = 9 as const
-const WORK_DAY_END = 18 as const
-
-const MONDAY = 0
-const WEDNESDAY = 3
-const SATURDAY = 5
+import { getRandom } from './utils'
+import {
+  days,
+  MONDAY,
+  names,
+  places,
+  roles,
+  SATURDAY,
+  WEDNESDAY,
+  WEEKEND,
+  WORK_DAY_END,
+  WORK_DAY_START
+} from './constants'
 
 export interface Schedule {
   day: typeof days[number],
   from: number | typeof WEEKEND,
   to: number | typeof WEEKEND,
-  truancyReason?: Preposition
+  reason?: string
 }
 
 export interface Employee {
@@ -48,11 +45,7 @@ export function makeEmployees(count: number): Array<Employee> {
 /**
  * Generate a random employee
  * */
-function makeEmployee(
-  workDayStart: number = WORK_DAY_START,
-  workDayEnd: number = WORK_DAY_END
-): Employee {
-  const weekend = days.slice(-SATURDAY)
+function makeEmployee(): Employee {
   const workingDays = days.slice(MONDAY, SATURDAY)
 
   const place = places[getRandom(places.length)]
@@ -88,7 +81,6 @@ function makeEmployee(
 
 /** Generate schedule for employee */
 function makeSchedule(workingDays: string[]) {
-  const weekends = days.slice(-SATURDAY)
   const schedules: Schedule[] = []
 
   days.forEach(day => {

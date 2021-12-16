@@ -1,6 +1,6 @@
 import { makeAutoObservable, runInAction } from 'mobx'
-import {format} from 'date-fns'
-import { days } from '../data/employeeFactory'
+import { format } from 'date-fns'
+import { days } from '../factories/constants'
 
 class _DateStore {
   date: Date
