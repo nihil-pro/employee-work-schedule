@@ -15,6 +15,7 @@ function NumberInput({ value, onChange }: NumberInputProps) {
       type='number'
       label='Количество сотрудников'
       inputProps={{ min: 4, max: 25 }}
+      sx={{ minWidth: 200 }}
     />
   )
 }
