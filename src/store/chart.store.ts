@@ -2,7 +2,7 @@ import { ChangeEvent } from 'react'
 import { makeAutoObservable, autorun, runInAction, reaction } from 'mobx'
 import { DateStore } from './date.store'
 import { Employee, EmployeeFactory, makeEmployees, Schedule } from '../factories/employee.factory'
-import { generateActivities, TruanciesFactory } from '../factories/activity.factory'
+import { generateActivities, ActivitiesFactory } from '../factories/activity.factory'
 import { WEEKEND } from '../factories/constants'
 
 export interface ChartData {
@@ -26,7 +26,7 @@ class Store {
 
   constructor(
     employeeFactory: EmployeeFactory,
-    truanciesFactory: TruanciesFactory,
+    truanciesFactory: ActivitiesFactory,
     employeeCount = 10
   ) {
     makeAutoObservable(this, {}, { autoBind: true })

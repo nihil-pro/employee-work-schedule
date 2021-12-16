@@ -13,13 +13,15 @@ import {
 } from './constants'
 
 
-export type TruanciesFactory = (employees: Employee[]) => Employee[]
+export type ActivitiesFactory = (employees: Employee[]) => Employee[]
 type _Event = 'leftEarlier' | 'cameEarlier' | 'cameLater' | 'leftLater'
 
 /**
  * Generate random employees activities
  * */
 export function generateActivities(employees: Employee[]): Employee[] {
+  if (employees.length < 4) return employees
+
   function loop(indexes?: number[]): number {
     const result = getRandom(employees.length)
     if (indexes?.includes(result)) return loop(indexes)
