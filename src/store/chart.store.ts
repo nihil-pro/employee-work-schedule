@@ -6,6 +6,7 @@ import { generateActivities, ActivitiesFactory } from '../factories/activity.fac
 import { WEEKEND } from '../factories/constants'
 
 export interface ChartData {
+  name: string,
   employee: Employee
   planFrom: number,
   planTo: number,
@@ -65,6 +66,7 @@ class Store {
       const schedules = this.prepareSchedules(planSchedule, factSchedule)
 
       const obj: ChartData = {
+        name: employee.name,
         employee: employee,
         ...schedules
       }
