@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b9fa4ec-4ac5-4c54-aed6-de9b5e9cb468" name="Default Changelist" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/components/charts/Chart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inputs/NumberInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/activity.factory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lexicon.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/charts/CustomTooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/charts/CustomTooltip.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dates/DateSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dates/DateSelect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/employeeFactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/employee.factory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/date.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/date.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/chart.store.ts" afterDir="false" />
-    </list>
+    <list default="true" id="2b9fa4ec-4ac5-4c54-aed6-de9b5e9cb468" name="Default Changelist" comment="initial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +57,7 @@
       <workItem from="1639479695490" duration="91000" />
       <workItem from="1639480673467" duration="35520000" />
       <workItem from="1639563706463" duration="18032000" />
-      <workItem from="1639655753431" duration="282000" />
+      <workItem from="1639655753431" duration="387000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1639591768135</created>
